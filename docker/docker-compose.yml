@@ -10,6 +10,8 @@ services:
       MARIADB_ROOT_PASSWORD: "${CANARY_DB_ROOT_PASSWORD:-root}"
     networks:
       - canary-net
+    ports:
+      - "127.0.0.1:3307:3306"
     volumes:
       - 'db-volume:/var/lib/mysql'
     healthcheck:
@@ -20,6 +22,7 @@ services:
 
   server:
     image: "${CANARY_IMAGE:-ghcr.io/opentibiabr/canary:latest}"
+    platform: "${CANARY_PLATFORM:-linux/amd64}"
     restart: unless-stopped
     environment:
       CANARY_DB_HOST: "${CANARY_DB_HOST:-db}"
@@ -66,8 +69,10 @@ services:
     build:
       context: .
       dockerfile: quickstart/myaac/Dockerfile
-      args:
-        MYAAC_REF: "${MYAAC_REF:-develop}"
+    entrypoint:
+      - /bin/sh
+      - -lc
+      - mkdir -p /var/www/html/system/cache /var/www/html/system/cache/twig /var/www/html/system/logs /var/www/html/system/php_sessions && chown -R www-data:www-data /var/www/html/system/cache /var/www/html/system/logs /var/www/html/system/php_sessions && apache2-foreground
     restart: unless-stopped
     environment:
       CANARY_DB_HOST: "${CANARY_DB_HOST:-db}"
@@ -83,6 +88,7 @@ services:
       CANARY_STATUS_PORT: "${CANARY_STATUS_PORT:-7173}"
       CANARY_STATUS_TIMEOUT: "${CANARY_STATUS_TIMEOUT:-5000}"
       CANARY_DATA_PACK: "${CANARY_DATA_PACK:-data-otservbr-global}"
+      MYAAC_SERVER_PATH: "/canary"
       MYAAC_SITE_URL: "${MYAAC_SITE_URL:-http://localhost:8080}"
       MYAAC_ADMIN_ACCOUNT: "${MYAAC_ADMIN_ACCOUNT:-myaacadmin}"
       MYAAC_ADMIN_EMAIL: "${MYAAC_ADMIN_EMAIL:-admin@localhost.local}"
@@ -92,6 +98,9 @@ services:
       MYAAC_TIMEZONE: "${MYAAC_TIMEZONE:-America/Fortaleza}"
     ports:
       - '${MYAAC_HTTP_PORT:-8080}:80'
+    volumes:
+      - '../../myaac-main:/var/www/html'
+      - '../:/canary'
     networks:
       - canary-net
     depends_on:
@@ -102,6 +111,7 @@ services:
 
   login-server:
     image: "${LOGIN_SERVER_IMAGE:-opentibiabr/login-server:latest}"
+    platform: "${LOGIN_SERVER_PLATFORM:-linux/amd64}"
     restart: unless-stopped
     environment:
       LOGIN_HTTP_PORT: "${LOGIN_HTTP_PORT:-8088}"

@@ -7,12 +7,13 @@ The quickstart currently starts:
 
 - MariaDB
 - Canary server from the published runtime image
-- MyAAC from the `slawkens/myaac` `develop` branch
+- MyAAC from the local `../../myaac-main` directory
 - `opentibiabr/login-server` for the client login webservice
 - Test accounts and characters, when enabled
 
-MyAAC is used only as the website/AAC. The MyAAC login webservice file is
-removed from the quickstart image, so clients should use `login-server`.
+MyAAC is used only as the website/AAC. The Docker image only provides PHP/Apache
+runtime dependencies; the website code is mounted from the project-level
+`myaac-main` directory.
 
 ## Local Development Only
 
@@ -250,7 +251,6 @@ For a first login, use account `@test1` with password `test`.
 ```env
 MYAAC_HTTP_PORT=8080
 MYAAC_SITE_URL=http://localhost:8080
-MYAAC_REF=develop
 MYAAC_ADMIN_ACCOUNT=myaacadmin
 MYAAC_ADMIN_EMAIL=admin@localhost.local
 MYAAC_ADMIN_PASSWORD=admin123
@@ -259,9 +259,8 @@ MYAAC_CLIENT_VERSION=1501
 MYAAC_TIMEZONE=America/Fortaleza
 ```
 
-`MYAAC_REF` is the Git ref used when building the MyAAC image. The default is
-`develop`, which tracks the MyAAC branch compatible with Canary `main`. To test
-a tag or another branch, change `MYAAC_REF` and rebuild:
+The MyAAC container serves the local `../../myaac-main` directory. Rebuild the
+runtime image only after changing PHP/Apache dependencies:
 
 ```bash
 docker compose build --no-cache myaac
@@ -330,9 +329,9 @@ should live in a separate development compose file that uses
 Use `CANARY_IMAGE` only when testing another published or locally loaded Canary
 runtime image. The default quickstart should stay on the official image.
 
-The MyAAC image is built locally from `slawkens/myaac` because the quickstart
-tracks `MYAAC_REF=develop` by default. This build installs PHP dependencies with
-Composer, but it does not compile Canary.
+The MyAAC image is a local PHP/Apache runtime for the mounted `../../myaac-main`
+directory. It does not download or install a separate MyAAC copy, and it does not
+compile Canary.
 
 ## CI Coverage
 

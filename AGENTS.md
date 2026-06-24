@@ -83,7 +83,7 @@ rg -n "registerSharedClass\\(L," src/lua
 - The MyAAC quickstart image must not include or expose `login.php`; MyAAC is used only as the website/admin AAC.
 - The default client login URL is `http://localhost:8088/login`.
 - The default web/admin URL is `http://localhost:8080`.
-- MyAAC must build from the `slawkens/myaac` `develop` branch unless a compatibility reason is documented.
+- MyAAC must be served from the project-level `../myaac-main` bind mount; do not download or build a second MyAAC copy inside Canary.
 - Public Docker env vars for Canary should use the `CANARY_*` prefix. Avoid adding new public `MYSQL_*`, `OT_*`, or raw Lua config variable names.
 - The quickstart must not require compiling Canary locally; use the published Canary runtime image.
 

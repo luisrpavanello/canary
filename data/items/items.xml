@@ -85279,4 +85279,28 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="imbuement scrolls"/>
 		<attribute key="weight" value="250"/>
 	</item>
+	<item id="65000" article="a" name="dragon crystal sword">
+		<attribute key="description" value="A legendary sword forged from dragon crystals."/>
+		<attribute key="primarytype" value="sword weapons"/>
+		<attribute key="weaponType" value="sword"/>
+		<attribute key="slotType" value="two-handed"/>
+		<attribute key="absorbpercentice" value="15"/>
+		<attribute key="skillsword" value="6"/>
+		<attribute key="attack" value="75"/>
+		<attribute key="defense" value="45"/>
+		<attribute key="weight" value="7500"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost sword" value="3"/>
+		</attribute>
+		<attribute key="script" value="moveevent;weapon">
+			<attribute key="level" value="300"/>
+			<attribute key="unproperly" value="true"/>
+			<attribute key="weaponType" value="sword"/>
+			<attribute key="vocation" value="Knight;true, Elite Knight"/>
+		</attribute>
+	</item>
 </items>
