@@ -255,7 +255,7 @@ MYAAC_ADMIN_ACCOUNT=myaacadmin
 MYAAC_ADMIN_EMAIL=admin@localhost.local
 MYAAC_ADMIN_PASSWORD=admin123
 MYAAC_ADMIN_PLAYER=ADM1
-MYAAC_CLIENT_VERSION=1501
+MYAAC_CLIENT_VERSION=1511
 MYAAC_TIMEZONE=America/Fortaleza
 ```
 
@@ -281,6 +281,7 @@ the web container, and it does not include MyAAC's client login webservice file.
 LOGIN_SERVER_IMAGE=opentibiabr/login-server:latest
 LOGIN_HTTP_PORT=8088
 LOGIN_GRPC_PORT=9090
+CANARY_AUTH_TYPE=session
 LOGIN_RATE_LIMITER_RATE=2
 LOGIN_RATE_LIMITER_BURST=5
 ```

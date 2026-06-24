@@ -36,6 +36,7 @@ services:
       CANARY_GAME_PORT: "${CANARY_GAME_PORT:-7172}"
       CANARY_STATUS_PORT: "${CANARY_STATUS_PORT:-7173}"
       CANARY_STATUS_TIMEOUT: "${CANARY_STATUS_TIMEOUT:-5000}"
+      CANARY_AUTH_TYPE: "${CANARY_AUTH_TYPE:-session}"
       CANARY_TEST_ACCOUNTS: "${CANARY_TEST_ACCOUNTS:-true}"
       CANARY_DATA_PACK: "${CANARY_DATA_PACK:-data-otservbr-global}"
       CANARY_MAP_URL: "${CANARY_MAP_URL:-https://github.com/opentibiabr/canary/releases/download/v3.5.0/otservbr.otbm}"
@@ -97,7 +98,7 @@ services:
       MYAAC_ADMIN_EMAIL: "${MYAAC_ADMIN_EMAIL:-admin@localhost.local}"
       MYAAC_ADMIN_PASSWORD: "${MYAAC_ADMIN_PASSWORD:-admin123}"
       MYAAC_ADMIN_PLAYER: "${MYAAC_ADMIN_PLAYER:-ADM1}"
-      MYAAC_CLIENT_VERSION: "${MYAAC_CLIENT_VERSION:-1501}"
+      MYAAC_CLIENT_VERSION: "${MYAAC_CLIENT_VERSION:-1511}"
       MYAAC_TIMEZONE: "${MYAAC_TIMEZONE:-America/Fortaleza}"
     ports:
       - '${MYAAC_HTTP_PORT:-8080}:80'
@@ -121,6 +122,7 @@ services:
       - /usr/local/go/bin/go run ./src
     restart: unless-stopped
     environment:
+      LOGIN_IP: "0.0.0.0"
       LOGIN_HTTP_PORT: "${LOGIN_HTTP_PORT:-8088}"
       LOGIN_GRPC_PORT: "${LOGIN_GRPC_PORT:-9090}"
       MYSQL_HOST: "${CANARY_DB_HOST:-db}"
