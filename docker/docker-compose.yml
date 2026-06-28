@@ -130,6 +130,7 @@ services:
       MYSQL_DBNAME: "${CANARY_DB_NAME:-canary}"
       MYSQL_USER: "${CANARY_DB_USER:-canary}"
       MYSQL_PASS: "${CANARY_DB_PASSWORD:-canary}"
+      SERVER_PATH: "/canary"
       SERVER_NAME: "${CANARY_SERVER_NAME:-OpenTibiaBR Canary}"
       SERVER_IP: "${CANARY_SERVER_IP:-127.0.0.1}"
       SERVER_PORT: "${CANARY_GAME_PORT:-7172}"
@@ -141,6 +142,7 @@ services:
       - '${LOGIN_GRPC_PORT:-9090}:${LOGIN_GRPC_PORT:-9090}'
     volumes:
       - '../../login-server:/usr/local/go/src/github.com/opentibiabr/login-server'
+      - '../:/canary:ro'
       - 'login-go-cache:/go/pkg/mod'
       - 'login-go-build-cache:/root/.cache/go-build'
     networks:
