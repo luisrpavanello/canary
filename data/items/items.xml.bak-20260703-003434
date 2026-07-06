@@ -85329,30 +85329,4 @@ Granted by TibiaGoals.com"/>
 
 
 
-
-
-	<item id="65002" article="a" name="Ring of Power">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="description" value="The Foe-hammer, a radiant sword fit for masters of magic."/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="46"/>
-		<attribute key="extradef" value="2"/>
-		<attribute key="defense" value="33"/>
-		<attribute key="weight" value="5400"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost sword" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="50"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-			<attribute key="vocation" value="Knight;true, Elite Knight"/>
-		</attribute>
-	</item>
-
 </items>

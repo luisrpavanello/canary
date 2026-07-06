@@ -19607,6 +19607,9 @@
 	<monster centerx="13914" centery="14082" centerz="7" radius="2">
 		<monster name="Elf Scout" x="0" y="0" z="7" spawntime="90" />
 	</monster>
+	<monster centerx="29767" centery="29849" centerz="7" radius="1">
+		<monster name="Annihilon" x="0" y="0" z="7" spawntime="60" />
+	</monster>
 	<monster centerx="33610" centery="30992" centerz="7" radius="3">
 		<monster name="Old Wasp" x="-2" y="2" z="7" spawntime="60" />
 	</monster>
