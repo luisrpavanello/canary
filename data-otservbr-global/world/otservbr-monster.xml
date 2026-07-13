@@ -131286,6 +131286,42 @@
 		<monster name="Poison Spider" x="-1" y="-1" z="11" spawntime="90" />
 		<monster name="Poison Spider" x="1" y="1" z="11" spawntime="90" />
 	</monster>
+	<monster centerx="32243" centery="32171" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32245" centery="32171" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32247" centery="32171" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32249" centery="32171" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32251" centery="32171" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32253" centery="32171" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32257" centery="32171" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32259" centery="32171" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32261" centery="32171" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32263" centery="32171" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32265" centery="32171" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32267" centery="32171" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
 	<monster centerx="31993" centery="32175" centerz="11" radius="3">
 		<monster name="Rat" x="0" y="2" z="11" spawntime="90" />
 	</monster>
@@ -131313,14 +131349,59 @@
 	<monster centerx="32346" centery="32176" centerz="11" radius="1">
 		<monster name="Poison Spider" x="1" y="0" z="11" spawntime="90" />
 	</monster>
+	<monster centerx="32243" centery="32178" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32245" centery="32178" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32247" centery="32178" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32249" centery="32178" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32251" centery="32178" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32253" centery="32178" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32257" centery="32178" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32259" centery="32178" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32261" centery="32178" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32263" centery="32178" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32265" centery="32178" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32267" centery="32178" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
 	<monster centerx="32390" centery="32179" centerz="11" radius="4">
 		<monster name="Poison Spider" x="-1" y="-4" z="11" spawntime="90" />
 		<monster name="Poison Spider" x="3" y="-2" z="11" spawntime="90" />
 		<monster name="Poison Spider" x="-3" y="0" z="11" spawntime="90" />
 		<monster name="Poison Spider" x="2" y="3" z="11" spawntime="90" />
 	</monster>
+	<monster centerx="32243" centery="32180" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
 	<monster centerx="32084" centery="32182" centerz="11" radius="3">
 		<monster name="Poison Spider" x="3" y="2" z="11" spawntime="90" />
+	</monster>
+	<monster centerx="32243" centery="32182" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32267" centery="32182" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
 	</monster>
 	<monster centerx="32343" centery="32182" centerz="11" radius="3">
 		<monster name="Poison Spider" x="2" y="2" z="11" spawntime="90" />
@@ -131339,8 +131420,29 @@
 	<monster centerx="33064" centery="32182" centerz="11" radius="3">
 		<monster name="Corym Skirmisher" x="2" y="-3" z="11" spawntime="90" />
 	</monster>
+	<monster centerx="32261" centery="32183" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32267" centery="32184" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
 	<monster centerx="32355" centery="32184" centerz="11" radius="1">
 		<monster name="Poison Spider" x="1" y="0" z="11" spawntime="90" />
+	</monster>
+	<monster centerx="32261" centery="32185" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32267" centery="32186" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32243" centery="32187" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32261" centery="32187" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32267" centery="32188" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
 	</monster>
 	<monster centerx="32014" centery="32189" centerz="11" radius="3">
 		<monster name="Rat" x="-3" y="-3" z="11" spawntime="90" />
@@ -131348,6 +131450,18 @@
 	<monster centerx="32049" centery="32189" centerz="11" radius="3">
 		<monster name="Poison Spider" x="-3" y="-1" z="11" spawntime="90" />
 		<monster name="Poison Spider" x="3" y="2" z="11" spawntime="90" />
+	</monster>
+	<monster centerx="32243" centery="32189" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32249" centery="32189" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32251" centery="32189" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32261" centery="32189" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
 	</monster>
 	<monster centerx="32343" centery="32189" centerz="11" radius="3">
 		<monster name="Spider" x="0" y="-3" z="11" spawntime="90" />
@@ -131373,10 +131487,40 @@
 	<monster centerx="33029" centery="32189" centerz="11" radius="3">
 		<monster name="Corym Charlatan" x="2" y="0" z="11" spawntime="90" />
 	</monster>
+	<monster centerx="32267" centery="32190" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32243" centery="32191" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32250" centery="32191" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32252" centery="32191" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32261" centery="32191" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32267" centery="32192" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
 	<monster centerx="32390" centery="32192" centerz="11" radius="4">
 		<monster name="Poison Spider" x="-3" y="-2" z="11" spawntime="90" />
 		<monster name="Poison Spider" x="1" y="0" z="11" spawntime="90" />
 		<monster name="Orc Spearman" x="-2" y="1" z="11" spawntime="90" />
+	</monster>
+	<monster centerx="32243" centery="32193" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32250" centery="32193" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32252" centery="32193" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
+	</monster>
+	<monster centerx="32261" centery="32193" centerz="11" radius="1">
+		<monster name="Training Machine" x="0" y="0" z="11" spawntime="60" />
 	</monster>
 	<monster centerx="32049" centery="32196" centerz="11" radius="3">
 		<monster name="Poison Spider" x="2" y="-3" z="11" spawntime="90" />
