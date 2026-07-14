@@ -291,6 +291,7 @@ local function makeCoinTransaction(self, offer, desc)
 
 	if op then
 		GameStore.insertHistory(self:getAccountId(), GameStore.HistoryTypes.HISTORY_TYPE_NONE, desc, offer.price * -1, offer.coinType)
+		GameStore.insertAccountAction(self:getAccountId(), string.format("Purchased %s for %d Tibia Coins in Store.", desc, offer.price))
 	end
 
 	return op

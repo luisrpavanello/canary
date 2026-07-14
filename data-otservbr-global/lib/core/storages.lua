@@ -115,6 +115,16 @@ Storage = {
 	FreeQuests = 30057,
 	ShrineEntrance = 30060,
 	PlayerWeaponReward = 30061,
+	SwordOfFury = {
+		Questline = 59000,
+		Humility = 59001,
+		Greed = 59002,
+		Medicine = 59003,
+		LostItem = 59004,
+		Creature = 59005,
+		Flames = 59006,
+		Claimed = 59007,
+	},
 	--[[
 	Old storages
 	Over time, this will be dropped and replaced by the table above

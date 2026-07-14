@@ -1632,6 +1632,9 @@
 	<npc centerx="32326" centery="32093" centerz="7" radius="1">
 		<npc name="Ivalisse" x="0" y="0" z="7" spawntime="60" />
 	</npc>
+	<npc centerx="32028" centery="32104" centerz="7" radius="1">
+		<npc name="Wounded Wolf" x="0" y="0" z="7" spawntime="60" />
+	</npc>
 	<npc centerx="33024" centery="32111" centerz="7" radius="1">
 		<npc name="Bill The Worker" x="0" y="0" z="7" spawntime="60" />
 	</npc>
@@ -2285,6 +2288,9 @@
 	</npc>
 	<npc centerx="33685" centery="32180" centerz="8" radius="1">
 		<npc name="Vanys" x="0" y="0" z="8" spawntime="60" />
+	</npc>
+	<npc centerx="32082" centery="32182" centerz="8" radius="1">
+		<npc name="Arlan the Ashkeeper" x="0" y="0" z="8" spawntime="60" />
 	</npc>
 	<npc centerx="32115" centery="32188" centerz="8" radius="1">
 		<npc name="Paulie" x="0" y="0" z="8" spawntime="60" />

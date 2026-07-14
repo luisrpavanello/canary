@@ -116,6 +116,10 @@ local function insertHistory(accountId, mode, description, coinAmount, coinType)
 	return db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", accountId, mode, db.escapeString(description), coinType, coinAmount, os.time()))
 end
 
+local function insertAccountAction(accountId, action)
+	return db.query(string.format("INSERT INTO `myaac_account_actions` (`account_id`, `ip`, `ipv6`, `date`, `action`) VALUES (%s, 0, '', %s, %s)", accountId, os.time(), db.escapeString(action)))
+end
+
 local function retrieveHistoryTotalPages(accountId)
 	local resultId = db.storeQuery("SELECT count(id) as total FROM store_history WHERE account_id = " .. accountId)
 	if not resultId then
@@ -371,6 +375,7 @@ store.getOffersByName = getOffersByName
 store.haveCategoryRook = haveCategoryRook
 store.haveOfferRook = haveOfferRook
 store.insertHistory = insertHistory
+store.insertAccountAction = insertAccountAction
 store.retrieveHistoryTotalPages = retrieveHistoryTotalPages
 store.retrieveHistoryEntries = retrieveHistoryEntries
 store.getDefaultDescription = getDefaultDescription

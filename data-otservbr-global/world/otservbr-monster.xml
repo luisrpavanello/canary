@@ -61875,9 +61875,6 @@
 	<monster centerx="33127" centery="32084" centerz="8" radius="3">
 		<monster name="Rotworm" x="1" y="3" z="8" spawntime="90" />
 	</monster>
-	<monster centerx="32091" centery="32085" centerz="8" radius="2">
-		<monster name="Troll" x="-1" y="0" z="8" spawntime="90" />
-	</monster>
 	<monster centerx="32481" centery="32085" centerz="8" radius="3">
 		<monster name="Cyclops" x="1" y="1" z="8" spawntime="90" />
 	</monster>
@@ -61889,6 +61886,9 @@
 		<monster name="Bat" x="3" y="-3" z="8" spawntime="90" />
 		<monster name="Bat" x="2" y="0" z="8" spawntime="90" />
 		<monster name="Bat" x="-1" y="2" z="8" spawntime="90" />
+	</monster>
+	<monster centerx="32088" centery="32086" centerz="8" radius="2">
+		<monster name="Troll" x="0" y="1" z="8" spawntime="90" />
 	</monster>
 	<monster centerx="32447" centery="32087" centerz="8" radius="2">
 		<monster name="Cyclops" x="-1" y="1" z="8" spawntime="90" />
