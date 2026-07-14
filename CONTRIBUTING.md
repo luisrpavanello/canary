@@ -8,7 +8,7 @@ This project adheres to the [Contributor Covenant Code of Conduct](https://githu
 
 ## Project Roadmap
 
-- The Canary project is part of a larger ecosystem within the Open Tibia BR organization, which includes various projects focused on enhancing and innovating within OT server development. You can follow our shared roadmap, encompassing projects like Canary, OTServBR, and OTServBR-Global, among others, in the projects section on GitHub: [Open Tibia BR - Project Roadmap](https://github.com/orgs/opentibiabr/projects).
+- The Canary project is part of a larger ecosystem within the Open Tibia BR organization, which includes various projects focused on enhancing and innovating within OT server development. You can follow our shared roadmap, encompassing projects like Canary, OTServBR, and Numenor, among others, in the projects section on GitHub: [Open Tibia BR - Project Roadmap](https://github.com/orgs/opentibiabr/projects).
 
 - This roadmap aims to ensure alignment of initiatives and prioritize the development of improvements and new features that benefit the community. Community participation is crucial, and we encourage contributors to review the roadmap before proposing major changes, to ensure these align with the strategic direction of our projects.
 

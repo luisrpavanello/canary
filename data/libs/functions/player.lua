@@ -93,7 +93,7 @@ function Player.addManaSpent(...)
 	return ret
 end
 
--- Functions From OTServBR-Global
+-- Functions From Numenor
 function Player.depositMoney(self, amount)
 	return Bank.deposit(self, amount)
 end
