@@ -200,7 +200,7 @@ local function normalizeOffer(offer)
 	end
 
 	if offer.coinType == nil then
-		offer.coinType = GameStore.CoinType.Transferable
+		offer.coinType = GameStore.CoinType.Coin
 	else
 		local isValidCoinType = false
 		for _, value in pairs(GameStore.CoinType) do

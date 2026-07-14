@@ -241,6 +241,24 @@ local function removeCombinedCoinsBalance(self, coins)
 	return removed
 end
 
+local function removeRegularStoreCoinsBalance(self, coins)
+	local regularCoins = self:getTibiaCoins() or 0
+	if regularCoins >= coins then
+		return self:removeCoinsBalance(coins)
+	end
+
+	local remainingCoins = coins - regularCoins
+	if regularCoins > 0 and not self:removeCoinsBalance(regularCoins) then
+		return false
+	end
+
+	if remainingCoins > 0 then
+		return self:removeTransferableCoinsBalance(remainingCoins)
+	end
+
+	return true
+end
+
 local function makeCoinTransaction(self, offer, desc)
 	local op = false
 
@@ -265,10 +283,10 @@ local function makeCoinTransaction(self, offer, desc)
 		playerKV:set(GameStore.Kv.expBoostCount, expBoostCount + 1)
 	end
 
-	if offer.coinType == GameStore.CoinType.Coin and self:canRemoveCoins(offer.price) then
-		op = self:removeCoinsBalance(offer.price)
+	if offer.coinType == GameStore.CoinType.Coin and self:canPayForOffer(offer.price, offer.coinType) then
+		op = removeRegularStoreCoinsBalance(self, offer.price)
 	elseif offer.coinType == GameStore.CoinType.Transferable and self:canPayForOffer(offer.price, offer.coinType) then
-		op = removeCombinedCoinsBalance(self, offer.price)
+		op = self:removeTransferableCoinsBalance(offer.price)
 	end
 
 	if op then
@@ -280,12 +298,12 @@ end
 
 local function canPayForOffer(self, coinsToRemove, coinType)
 	if coinType == GameStore.CoinType.Coin then
-		return self:canRemoveCoins(coinsToRemove)
+		-- Regular store offers can be paid with regular coins first, then transferable coins if needed.
+		return ((self:getTibiaCoins() or 0) + (self:getTransferableCoins() or 0)) >= coinsToRemove
 	end
 
 	if coinType == GameStore.CoinType.Transferable then
-		-- Transferable coin offers can be paid using transferable and regular coins combined
-		return ((self:getTransferableCoins() or 0) + (self:getTibiaCoins() or 0)) >= coinsToRemove
+		return self:canRemoveTransferableCoins(coinsToRemove)
 	end
 
 	return false
